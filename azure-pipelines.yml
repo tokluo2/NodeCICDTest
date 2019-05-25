@@ -14,3 +14,8 @@ steps:
   inputs:
     versionSpec: '10.x'
   displayName: 'Install Node.js'
+- task: AzureRmWebAppDeployment@3
+  inputs:
+      azureSubscription: '5c45f2ea-0f80-4d46-ab2f-56f67ed4e39a'
+      WebAppName: 'NodeCIDE'
+      enableXmlVariableSubstitution: true
